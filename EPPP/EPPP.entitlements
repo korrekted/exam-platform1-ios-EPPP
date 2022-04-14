@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.eppp.widgets</string>
+		<string>group.eppp.widget</string>
 	</array>
 </dict>
 </plist>
