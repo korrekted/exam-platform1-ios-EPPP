@@ -121,7 +121,7 @@ private extension SplashViewController {
         state == .none ? mainView.preloaderView.stopAnimating() : mainView.preloaderView.startAnimating()
         
         let attrs = TextAttributes()
-            .textColor(UIColor(integralRed: 75, green: 81, blue: 102))
+            .textColor(UIColor.white)
             .font(Fonts.SFProRounded.regular(size: 17.scale))
             .lineHeight(23.8.scale)
             .textAlignment(.center)

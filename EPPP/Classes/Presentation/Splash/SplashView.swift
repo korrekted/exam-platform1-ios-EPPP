@@ -36,6 +36,12 @@ private extension SplashView {
 private extension SplashView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: topAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8.scale),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8.scale),
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 131.scale : 50.scale)
@@ -52,13 +58,6 @@ private extension SplashView {
             preloaderLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             preloaderLabel.topAnchor.constraint(equalTo: preloaderView.bottomAnchor, constant: 12.scale)
         ])
-        
-        NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: 366.scale)
-        ])
     }
 }
 
@@ -72,7 +71,7 @@ private extension SplashView {
             .textAlignment(.center)
         
         let attrs2 = TextAttributes()
-            .textColor(Appearance.mainColor)
+            .textColor(UIColor.white)
             .font(Fonts.SFProRounded.bold(size: 45.scale))
             .lineHeight(53.scale)
             .textAlignment(.center)
@@ -91,7 +90,7 @@ private extension SplashView {
     }
     
     func makePreloader() -> Spinner {
-        let view = Spinner(size: CGSize(width: 32.scale, height: 32.scale))
+        let view = Spinner(size: CGSize(width: 32.scale, height: 32.scale), style: .white)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -107,8 +106,8 @@ private extension SplashView {
     
     func makeImageView() -> UIImageView {
         let view = UIImageView()
-        view.contentMode = .scaleAspectFit
-        view.image = UIImage(named: "Splash.Image")
+        view.contentMode = .scaleAspectFill
+        view.image = UIImage(named: ScreenSize.isIphoneXFamily ? "Splash.Image" : "Splash.Image2")
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
