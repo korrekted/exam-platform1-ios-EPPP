@@ -36,12 +36,6 @@ private extension SplashView {
 private extension SplashView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.topAnchor.constraint(equalTo: topAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8.scale),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8.scale),
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 131.scale : 50.scale)
@@ -58,6 +52,13 @@ private extension SplashView {
             preloaderLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             preloaderLabel.topAnchor.constraint(equalTo: preloaderView.bottomAnchor, constant: 12.scale)
         ])
+        
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 366.scale)
+        ])
     }
 }
 
@@ -65,13 +66,13 @@ private extension SplashView {
 private extension SplashView {
     func makeTitleLabel() -> UILabel {
         let attrs1 = TextAttributes()
-            .textColor(Appearance.progress2Color)
+            .textColor(Appearance.thirdColor)
             .font(Fonts.SFProRounded.bold(size: 40.scale))
             .lineHeight(48.scale)
             .textAlignment(.center)
         
         let attrs2 = TextAttributes()
-            .textColor(UIColor.white)
+            .textColor(Appearance.mainColor)
             .font(Fonts.SFProRounded.bold(size: 45.scale))
             .lineHeight(53.scale)
             .textAlignment(.center)
@@ -90,7 +91,7 @@ private extension SplashView {
     }
     
     func makePreloader() -> Spinner {
-        let view = Spinner(size: CGSize(width: 32.scale, height: 32.scale), style: .white)
+        let view = Spinner(size: CGSize(width: 32.scale, height: 32.scale))
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -106,8 +107,8 @@ private extension SplashView {
     
     func makeImageView() -> UIImageView {
         let view = UIImageView()
-        view.contentMode = .scaleAspectFill
-        view.image = UIImage(named: ScreenSize.isIphoneXFamily ? "Splash.Image" : "Splash.Image2")
+        view.contentMode = .scaleAspectFit
+        view.image = UIImage(named: "Splash.Image")
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
