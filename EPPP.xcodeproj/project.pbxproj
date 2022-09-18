@@ -32,6 +32,7 @@
 		96E360102671536B00D49D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3600F2671536B00D49D4E /* LaunchScreen.storyboard */; };
 		96E360152671554B00D49D4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E360142671554B00D49D4E /* GoogleService-Info.plist */; };
 		DD39EA05B8E9940A443959B9 /* Pods_EPPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9CBE51CCD9C811CD425F20 /* Pods_EPPP.framework */; };
+		DE4FA13C28D792B300085483 /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4FA13B28D792B300085483 /* Onboarding.Chart.json */; };
 		DEC367B928995C4B005372BC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC365F428995C4A005372BC /* UIColorExtension.swift */; };
 		DEC367BA28995C4B005372BC /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC365F528995C4A005372BC /* Collection+Extension.swift */; };
 		DEC367BB28995C4B005372BC /* Observable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC365F628995C4A005372BC /* Observable+Utils.swift */; };
@@ -334,7 +335,6 @@
 		DEC368E428995C4B005372BC /* OImproveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3679B28995C4B005372BC /* OImproveCell.swift */; };
 		DEC368E528995C4B005372BC /* ReferencesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3679D28995C4B005372BC /* ReferencesTableCell.swift */; };
 		DEC368E628995C4B005372BC /* ReferencesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3679E28995C4B005372BC /* ReferencesTableView.swift */; };
-		DEC368E728995C4B005372BC /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = DEC367A028995C4B005372BC /* Onboarding.Chart.json */; };
 		DEC368E828995C4B005372BC /* OWhenStudyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC367A128995C4B005372BC /* OWhenStudyCell.swift */; };
 		DEC368E928995C4B005372BC /* WelcomeSlide1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC367A328995C4B005372BC /* WelcomeSlide1View.swift */; };
 		DEC368EA28995C4B005372BC /* WelcomeSlideIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC367A428995C4B005372BC /* WelcomeSlideIndicatorView.swift */; };
@@ -422,6 +422,7 @@
 		96E360142671554B00D49D4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB9CBE51CCD9C811CD425F20 /* Pods_EPPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1753C0DB668574A74D2CB22 /* Pods-EPPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPPP.debug.xcconfig"; path = "Target Support Files/Pods-EPPP/Pods-EPPP.debug.xcconfig"; sourceTree = "<group>"; };
+		DE4FA13B28D792B300085483 /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		DEC365F428995C4A005372BC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DEC365F528995C4A005372BC /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		DEC365F628995C4A005372BC /* Observable+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Utils.swift"; sourceTree = "<group>"; };
@@ -724,7 +725,6 @@
 		DEC3679B28995C4B005372BC /* OImproveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OImproveCell.swift; sourceTree = "<group>"; };
 		DEC3679D28995C4B005372BC /* ReferencesTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferencesTableCell.swift; sourceTree = "<group>"; };
 		DEC3679E28995C4B005372BC /* ReferencesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferencesTableView.swift; sourceTree = "<group>"; };
-		DEC367A028995C4B005372BC /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		DEC367A128995C4B005372BC /* OWhenStudyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWhenStudyCell.swift; sourceTree = "<group>"; };
 		DEC367A328995C4B005372BC /* WelcomeSlide1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeSlide1View.swift; sourceTree = "<group>"; };
 		DEC367A428995C4B005372BC /* WelcomeSlideIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeSlideIndicatorView.swift; sourceTree = "<group>"; };
@@ -2273,7 +2273,7 @@
 		DEC3679F28995C4B005372BC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DEC367A028995C4B005372BC /* Onboarding.Chart.json */,
+				DE4FA13B28D792B300085483 /* Onboarding.Chart.json */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -2382,12 +2382,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC3690428995DB3005372BC /* SF-Pro-Rounded-Black.otf in Resources */,
-				DEC368E728995C4B005372BC /* Onboarding.Chart.json in Resources */,
 				96E360152671554B00D49D4E /* GoogleService-Info.plist in Resources */,
 				96E3600D2671535E00D49D4E /* Localizable.strings in Resources */,
 				96E360092671535A00D49D4E /* SF-Pro-Rounded-Regular.otf in Resources */,
 				96E360082671535A00D49D4E /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				96E360102671536B00D49D4E /* LaunchScreen.storyboard in Resources */,
+				DE4FA13C28D792B300085483 /* Onboarding.Chart.json in Resources */,
 				96E35E1E2671521D00D49D4E /* Assets.xcassets in Resources */,
 				96E3600A2671535A00D49D4E /* SF-Pro-Rounded-Bold.otf in Resources */,
 			);
@@ -2831,7 +2831,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2840,7 +2840,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.eppp.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "EPPP Widget Prod";
@@ -2858,7 +2858,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2867,7 +2867,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.eppp.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "EPPP Widget Prod";
@@ -3003,7 +3003,7 @@
 				CODE_SIGN_ENTITLEMENTS = EPPP/EPPP.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = "$(SRCROOT)/EPPP/Resource/Info.plist";
@@ -3012,7 +3012,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.eppp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "EPPP Prod";
@@ -3032,7 +3032,7 @@
 				CODE_SIGN_ENTITLEMENTS = EPPP/EPPP.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = "$(SRCROOT)/EPPP/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -3040,7 +3040,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.eppp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "EPPP Prod";
